@@ -57,7 +57,7 @@
       "runsOn": {
         "ref": "EC2ResourceObj"
       },
-      "command": "sftp -b ${Input_STAGING_DIR}/ftpcommands #{user}@#{host}; wc -l data > ${OUTPUT1_STAGING_DIR}/linecount.txt;"
+      "command": "sftp -b ${INPUT1_STAGING_DIR}/ftpcommands #{user}@#{host}; wc -l data > ${OUTPUT1_STAGING_DIR}/linecount.txt;"
     },
     {
       "myComment": "This object is used to create an Amazon EC2 Instance that activities in the pipeline can run on.",
